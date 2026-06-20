@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/lovable-account-db?options=-c%20timezone=Asia/Kolkat
+    url: jdbc:postgresql://localhost:9010/lovable-account-db?options=-c%20timezone=Asia/Kolkata
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
