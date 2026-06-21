@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/lovable-workspace-db
+    # url: jdbc:postgresql://localhost:9010/lovable-workspace-db
     url: jdbc:postgresql://localhost:9010/lovable-workspace-db?sslmode=disable&options=-c%20TimeZone=Asia/Kolkata
     username: user
     password: password
