@@ -26,8 +26,8 @@ eureka:
 
 jwt.secretKey: asfd9asfdaoijfalkjl23u4oi5jlkjf98790890890ugojvakglsdfjn8yuh
 
-client.url: http://localhost:8080
+# client.url: http://localhost:8080
 
-# app:
-#   frontend:
-#     url: http://localhost:8080/frontend
+app:
+  frontend:
+    url: http://localhost:8080/frontend
