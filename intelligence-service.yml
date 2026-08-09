@@ -13,7 +13,7 @@ spring:
     model.chat: openai
     openai:
       api-key: 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
-      base-url: https://openrouter.ai/api
+      # base-url: https://openrouter.ai/api
       chat:
         options:
           model: gpt-5.4
