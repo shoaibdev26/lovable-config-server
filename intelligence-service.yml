@@ -13,14 +13,13 @@ spring:
     model.chat: openai
     openai:
       api-key: ${OPEN_AI_API_KEY}
-      # base-url: https://openrouter.ai/api
       chat:
         options:
           model: gpt-5.4
           temperature: 0.2
       embedding:
         options:
-          model: qwen/qwen3-embedding-8b
+          model: text-embedding-3-small
 
 ---
 
@@ -28,14 +27,20 @@ spring:
   config:
     activate:
       on-profile: k8s
+
   datasource:
     url: jdbc:postgresql://pgvector.lovable-core.svc.cluster.local:5432/intelligence_db
     username: intelligence_user
     password: ${DB_PASSWORD}
 
-ai:
+  ai:
+    model.chat: openai
     openai:
       api-key: ${AI_API_KEY}
-    chat:
+      chat:
         options:
           model: gpt-5.4
+          temperature: 0.2
+      embedding:
+        options:
+          model: text-embedding-3-small
