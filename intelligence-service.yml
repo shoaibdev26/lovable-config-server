@@ -34,9 +34,12 @@ spring:
     password: ${DB_PASSWORD}
 
   ai:
-    model.chat: openai
+    model:
+      chat: openai
+
     openai:
       api-key: ${AI_API_KEY}
+      base-url: https://openrouter.ai/api
       chat:
         options:
           model: gpt-5.4
